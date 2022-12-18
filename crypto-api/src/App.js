@@ -1,11 +1,11 @@
-
+import Navbar from './components/Navbar';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Ciao </h1>
-    </div>
+    <ThemeProvider>
+       <Navbar/>
+    </ThemeProvider>
   );
 }
-
 export default App;
